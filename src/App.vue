@@ -1,15 +1,77 @@
 <template>
-  <div id="app">
+  <div>
+    <div id="slogan" class="text-center">
+      <h1>Teste Vue</h1>
+      <p class="text-secondary">Gerador de nomes usando Vue.js, GraphQL e Node</p>
+    </div>
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h5>Prefixos <span class="badge badge-info">0</span></h5>
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    A
+                  </li>
+                  <li class="list-group-item">
+                    B
+                  </li>
+                  <li class="list-group-item">
+                    C
+                  </li>
+                </ul>
+                <br/>
+                <input class="form-control" type="text" placeholder="Digite o prefixo" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <h5>Sufixos <span class="badge badge-info">0</span></h5>
+            <div class="card">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    A
+                  </li>
+                  <li class="list-group-item">
+                    B
+                  </li>
+                  <li class="list-group-item">
+                    C
+                  </li>
+                </ul>
+                <br/>
+                <input class="form-control" type="text" placeholder="Digite o sufixo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import "bootstrap/dist/css/bootstrap.css";
+import "font-awesome/css/font-awesome.css";
 
 export default {
-  name: 'App',
+  name: 'app',
 }
 </script>
 
 <style>
 
+#slogan {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#main {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 </style>
